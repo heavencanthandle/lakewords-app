@@ -1,0 +1,3 @@
+# Release keystore stays outside git (same pattern as sibling Kompakt apps).
+*
+!.gitignore

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lake words</string>
+    <string name="title">lake words</string>
+    <string name="tagline">a love so robust\nit refuses\nto look away</string>
+    <string name="replay">replay</string>
+    <string name="intro_description">Water drawing back from a shore, and salt growing where it was.</string>
+</resources>

@@ -1,0 +1,13 @@
+*.iml
+.gradle/
+.idea/
+build/
+local.properties
+
+signing/signing.properties
+signing/signing.keystore
+
+*.apk
+*.aab
+.DS_Store
+agent-tools/
