@@ -11,4 +11,4 @@ Read AGENTS.md. It points at the README. Do not restate the README.
 - Do not edit the book text by hand in `assets/lakewords.txt` without saying so. It is converted from the LakeWords website's read page; fix it there too, or note the difference.
 - Do not load EB Garamond from Google Fonts at run time. The Kompakt has no Google services. The font files ship in `res/font/` with their license in `assets/`.
 - Do not add permissions. The app has none, and no network.
-- Phone updates replace the installed app: bump `versionCode`, then `adb install -r`, same certificate. The phone has the debug build. Do not uninstall, clear data, or create a keystore unless asked.
+- Phone updates replace the installed app: bump `versionCode`, then `adb install -r`, same certificate. The phone has the release build, signed by the key in `signing/` (gitignored; it signs debug builds too). Never replace or remove that key. Do not uninstall or clear data unless asked.

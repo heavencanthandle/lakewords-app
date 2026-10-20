@@ -9,8 +9,9 @@ The parent folder's `../CLAUDE.md` has the cross-app rules. This app talks to no
 - `.\gradlew.bat :app:testDebugUnitTest :app:assembleDebug`. Tests: `ShoreTest` (the intro's
   rules: water recedes, salt only on dry ground and off the words, words darken steadily,
   finishes on time; bones only on dry ground; the tagline page only adds ink), `BookTest`.
-- Phone: the debug certificate. Raise `versionCode`, then
-  `adb -d install -r app\build\outputs\apk\debug\app-debug.apk`.
+- Phone: release-signed by the key in `signing/` (gitignored; it signs debug builds too).
+  Raise `versionCode` (in `app/build.gradle.kts`), `:app:assembleRelease`, then
+  `adb -d install -r app\build\outputs\apk\release\app-release.apk`.
 - To see the intro, `adb exec-out screencap -p` at a few seconds apart works well: it runs
   about 36 s, then the cleared screen and the tagline scene, about 17 s more. Another session
   using the phone at the same time can bring its own app to the front; check what is on top.

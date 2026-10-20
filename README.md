@@ -47,5 +47,5 @@ No permissions. No network.
 adb -d install -r app\build\outputs\apk\debug\app-debug.apk
 ```
 
-Release signing uses a keystore in `signing/` (gitignored), the same pattern as Almanac. There is
-none yet; without it `assembleRelease` builds an unsigned APK.
+Release signing uses a keystore in `signing/` (gitignored), the same pattern as Almanac; it is not
+in this repository. Releases are on the GitHub releases page.
